@@ -18,6 +18,7 @@ public class Main {
 //        catL004.voice();
           Cat cat = new Cat("Barsik", 20);
           System.out.println(cat.jumpHeight());
+          cat.voice();
 
           Dog dog = new Dog();
           dog.goToStick(14);
