@@ -13,7 +13,7 @@ public class Animal {
     public Animal() {
     }
 
-    public void Voice() {
+    public void voice() {
         System.out.println("Voice!");
     }
 
