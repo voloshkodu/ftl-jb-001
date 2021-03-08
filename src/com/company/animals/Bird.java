@@ -3,6 +3,10 @@ package com.company.animals;
 public class Bird extends Animal {
     protected boolean flyModeActive = false;
 
+    public Bird() {
+        this.canFly = true;
+    }
+
     public void takeOff() {
         flyModeActive = true;
     }
