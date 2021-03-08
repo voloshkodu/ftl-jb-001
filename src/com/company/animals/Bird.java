@@ -19,4 +19,12 @@ public class Bird extends Animal {
     public void isTheBirdFlying() {
         System.out.println(this.flyModeActive == true ? "Duck flying mode: Yes" : "Duck flying mode: No");
     }
+
+    public boolean isFlyModeActive() {
+        return flyModeActive;
+    }
+
+    public void setFlyModeActive(boolean flyModeActive) {
+        this.flyModeActive = flyModeActive;
+    }
 }
