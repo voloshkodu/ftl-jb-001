@@ -8,16 +8,16 @@ public class Bird extends Animal {
         this.canFly = true;
     }
 
-    public void takeOff() {
+    public final void takeOff() {
         flyModeActive = true;
     }
 
-    public void landing() {
+    public final void landing() {
         flyModeActive = false;
     }
 
     public void isTheBirdFlying() {
-        System.out.println(this.flyModeActive == true ? "Duck flying mode: Yes" : "Duck flying mode: No");
+        System.out.println(this.flyModeActive == true ? "Bird flying mode: Yes" : "Bird flying mode: No");
     }
 
     public boolean isFlyModeActive() {
