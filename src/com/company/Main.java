@@ -4,10 +4,7 @@ package com.company;
 import com.company.L013.SwitchExample;
 import com.company.L019.StringExample;
 import com.company.L020.TypeConversation;
-import com.company.animals.Cat;
-import com.company.animals.Dog;
-import com.company.animals.Duck;
-import com.company.animals.MoveType;
+import com.company.animals.*;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -25,7 +22,7 @@ public class Main {
 //
 //        com.company.L004.Cat catL004 = new com.company.L004.Cat();
 //        catL004.voice();
-          Cat cat = new Cat("Barsik", 20);
+          Cat cat = new Cat("Barsik", new Animal.AnimalWeight(20, Animal.AnimalWeight.WeightType.kg));
           System.out.println(cat.jumpHeight());
           cat.voice();
 
@@ -39,7 +36,7 @@ public class Main {
 
           dog.voice();
 
-          Dog homelessDog = Dog.ofHomeless(100);
+          Dog homelessDog = Dog.ofHomeless(new Animal.AnimalWeight(100, Animal.AnimalWeight.WeightType.kg));
           homelessDog.voice();
 
           Duck duck = new Duck();
@@ -57,9 +54,9 @@ public class Main {
           }
 
           List<Dog> dogsHomeless = Arrays.asList(new Dog[] {
-                  Dog.ofHomeless(2),
-                  Dog.ofHomeless(3),
-                  Dog.ofHomeless(5)
+                  Dog.ofHomeless(new Animal.AnimalWeight(3, Animal.AnimalWeight.WeightType.kg)),
+                  Dog.ofHomeless(new Animal.AnimalWeight(3, Animal.AnimalWeight.WeightType.kg)),
+                  Dog.ofHomeless(new Animal.AnimalWeight(5, Animal.AnimalWeight.WeightType.kg))
           });
 
           System.out.println(dogsHomeless.size());
@@ -70,11 +67,11 @@ public class Main {
           }
 
           List<Dog> dogsLinkedList =  new LinkedList<>();
-          dogsLinkedList.add(Dog.ofHomeless(10));
-          dogsLinkedList.add(Dog.ofHomeless(10));
-          dogsLinkedList.add(Dog.ofHomeless(10));
-          dogsLinkedList.add(Dog.ofHomeless(10));
-          dogsLinkedList.add(Dog.ofHomeless(10));
+          dogsLinkedList.add(Dog.ofHomeless(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.kg)));
+          dogsLinkedList.add(Dog.ofHomeless(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.kg)));
+          dogsLinkedList.add(Dog.ofHomeless(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.kg)));
+          dogsLinkedList.add(Dog.ofHomeless(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.kg)));
+          dogsLinkedList.add(Dog.ofHomeless(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.kg)));
 
           int indexLinkedList = 0;
           while (indexLinkedList < dogsLinkedList.size()) {
