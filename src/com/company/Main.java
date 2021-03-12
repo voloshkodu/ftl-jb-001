@@ -89,6 +89,11 @@ public class Main {
           StringExample.run();
           TypeConversation.run();
 
+          dog.setWeight(new Animal.AnimalWeight(10, Animal.AnimalWeight.WeightType.kg));
+          try {
+                dog.getWeight().setValue(-10);
+          } catch (Animal.WeightException ignore) {}
+
 //          for (int i = 0; i < 100; i++) {
 //                SwitchExample.run();
 //          }
