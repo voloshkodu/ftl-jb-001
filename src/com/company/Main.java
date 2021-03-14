@@ -5,6 +5,7 @@ import com.company.L013.SwitchExample;
 import com.company.L019.StringExample;
 import com.company.L020.TypeConversation;
 import com.company.L026.FileExample;
+import com.company.L027.ThreadExample;
 import com.company.animals.*;
 
 import java.io.IOException;
@@ -102,6 +103,7 @@ public class Main {
 
 
           FileExample.run();
+          ThreadExample.run();
           
     }
 }
