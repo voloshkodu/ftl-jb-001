@@ -10,6 +10,7 @@ import com.company.L028.House;
 import com.company.animals.*;
 import com.company.tasks.task001.Task001;
 import com.company.tasks.task002.Task002;
+import com.company.tasks.task003.Task003;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -114,8 +115,11 @@ public class Main {
           House houseFull = new House.Builder().optHasSwimmingPool(true).optHasFancyStatues(true).optHasGarage(true).optHasGarden(true).build();
           System.out.println(houseFull.toString());
 
+          System.out.println("\nTask001");
           Task001.run();
-          System.out.println("");
+          System.out.println("\n\nTask002");
           Task002.run();
+          System.out.println("\n\nTask003");
+          Task003.run(3);
     }
 }
