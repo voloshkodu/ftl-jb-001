@@ -13,6 +13,7 @@ import com.company.tasks.task002.Task002;
 import com.company.tasks.task003.Task003;
 import com.company.tasks.task004.Task004;
 import com.company.tasks.task005.Task005;
+import com.company.tasks.task006.Task006;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -127,5 +128,7 @@ public class Main {
           Task004.run();
           System.out.println("\n\nTask005");
           Task005.run(7,14);
+          System.out.println("\n\nTask006");
+          Task006.run(2,10);
     }
 }
