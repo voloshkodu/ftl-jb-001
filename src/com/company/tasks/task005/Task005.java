@@ -7,6 +7,5 @@ public class Task005 {
             result = value * i;
             System.out.print(result + " ");
         }
-        System.out.println("");
     }
 }
