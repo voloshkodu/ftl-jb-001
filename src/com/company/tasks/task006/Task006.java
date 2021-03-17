@@ -9,6 +9,5 @@ public class Task006 {
             result *= value;
             step ++;
         } while (step < iteration);
-        System.out.println("");
     }
 }
