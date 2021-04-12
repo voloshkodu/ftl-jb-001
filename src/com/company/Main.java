@@ -18,6 +18,7 @@ import com.company.tasks.task007.Task007;
 import com.company.tasks.task008.Task008;
 import com.company.tasks.task009.Task009;
 import com.company.tasks.task010.Task010;
+import com.company.tasks.task011.Task011;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -113,7 +114,7 @@ public class Main {
 //          }
 
 
-          FileExample.run();
+//          FileExample.run();
 //          ThreadExample.run();
 
           House house = new House.Builder().optHasSwimmingPool(true).build();
@@ -142,6 +143,8 @@ public class Main {
 //          Task009.run();
           System.out.println("\n\nTask010");
           Task010.run(20);
+          System.out.println("\n\nTask011");
+          Task011.run(20, 0, 99);
           System.out.println("");
     }
 }
