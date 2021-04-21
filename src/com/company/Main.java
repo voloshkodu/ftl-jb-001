@@ -26,6 +26,7 @@ import com.company.tasks.task015.Task015;
 import com.company.tasks.task016.Task016;
 import com.company.tasks.task017.Task017;
 import com.company.tasks.task018.Task018;
+import com.company.tasks.task019.Task019;
 
 import java.io.IOException;
 import java.util.Arrays;
